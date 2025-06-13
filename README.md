@@ -28,6 +28,11 @@ npm run serve
 npm run build
 ```
 
+After building, you can preview the production files locally with:
+```
+npx serve -s dist
+```
+
 ### Lints and fixes files
 ```
 npm run lint

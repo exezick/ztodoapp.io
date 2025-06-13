@@ -4,7 +4,7 @@ function fix(url){
   let u=url.replace('registry.npm.taobao.org','registry.npmjs.org');
   u=u.split('?')[0];
   u=u.replace('/download/','/-/');
-  u=u.replace(/\/\-\/[@][^\/]+\//,'/-/');
+  u=u.replace(/\/-\/[@][^/]+\//, '/-/');
   return u;
 }
 function processDeps(deps){
